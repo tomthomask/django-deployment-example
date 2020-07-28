@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+  <!-- With this command, everything else usually on an html page gets extended from basic.html -->
+{% extends "basic_app/base.html" %}
+  {% block body_block %}
+
+  <h1>WELCOME TO INDEX</h1>
+  <!-- <h2>This is index.html page showing!</h2> -->
+  <h2>{{ text|cut:'World' }}</h1>
+  <h2>{{ number|add:'99' }}</h2>
+
+  {% endblock %}
